@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+.bod-y{
+    /* Color de la letra */
+    color:  wheat;
+    /* POsiciona nuestra imagen en el centro */
+    background-position:center center;
+    /* Lo que se repite , con esta funcion hace que no se repita */
+    background-repeat: no-repeat;
+    /* Hace que la parte seleccionada estee en todo el ancho */
+    background-size: cover;
+background-image: url(https://static.npmjs.com/abf53a31b2da4657a1a004ee9358551c.png);
+margin: 0 auto
+}
+
+
+/* Color del footer */
+.footer{
+    background-image: linear-gradient(
+139deg, #fb8817, #ff4b01, #c12127, #e02aff);
+position: fixed;
+bottom: 0;
+width: 100%;
+margin: 0 auto
+}
+
+.br{
+    background-color: #333;
+    height: 90px;
+    width: 100%;
+    display: flex;
+}
+.br2{
+    background-color: yellow;
+    height: 30px;
+    width: 100px;
+}
+.br3{
+    background-color: whitesmoke;
+    height: 30px;
+    width: 100px;
+    
+}
