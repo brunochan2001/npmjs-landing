@@ -1,45 +1,176 @@
 *{
-    box-sizing: border-box;
     margin: 0;
-}
-.bod-y{
-    /* Color de la letra */
-    color:  wheat;
-    /* POsiciona nuestra imagen en el centro */
-    background-position:center center;
-    /* Lo que se repite , con esta funcion hace que no se repita */
-    background-repeat: no-repeat;
-    /* Hace que la parte seleccionada estee en todo el ancho */
-    background-size: cover;
-background-image: url(https://static.npmjs.com/abf53a31b2da4657a1a004ee9358551c.png);
-margin: 0 auto
-}
-
-
-/* Color del footer */
-.footer{
-    background-image: linear-gradient(
-139deg, #fb8817, #ff4b01, #c12127, #e02aff);
-position: fixed;
-bottom: 0;
-width: 100%;
-margin: 0 auto
-}
-
-.br{
-    background-color: #333;
-    height: 90px;
-    width: 100%;
-    display: flex;
-}
-.br2{
-    background-color: yellow;
-    height: 30px;
-    width: 100px;
-}
-.br3{
-    background-color: whitesmoke;
-    height: 30px;
-    width: 100px;
+    box-sizing: border-box;
     
 }
+
+html{
+    line-height: 1.15;
+    text-size-adjust: 100%;
+
+}
+
+.contenedor-general{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    line-height: 1.15;
+    font-family: 'Source Sans Pro', 'Lucida Grande', sans-serif;
+    
+}
+
+/* CONTENIDO DEL HEADER PRINCIPAL */
+.contenedor-general-header{
+    background-color: #fff;
+    box-shadow: 0 4px 13px -3px rgb(0 0 0 /10%);
+    border-bottom: 1px solid #d2d2d2;
+    border-color: rgba(0,0,0,0.2);
+    width: 100%;
+}
+
+/* El header principal el color */
+.header-0{
+    border-width: 10px 0 0;
+    border-top-style: solid;
+    border-image: linear-gradient(139deg, #fb8817, #ff4b01, #c12127, #e02aff) 3;
+    width: 100%;
+}
+/* El segundo header el menu de navegacion */
+.header-1{
+    display: flex;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 96rem;
+    
+    
+}
+.head{
+    display: none;
+}
+.people{
+    display: none;
+}
+.nav{
+    white-space: nowrap;
+    
+    
+    
+    text-align: right;
+    flex-grow: 0;
+    overflow: hidden;
+    padding: 8px 0;
+    width: 100%;
+    margin-right: 0;
+    
+}
+.list{
+    display: flex;
+    justify-content: none;
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+    text-align: right;
+    padding: 0 16px;
+    white-space: nowrap;
+    justify-content: none;
+}
+.list-1{
+    
+    display: block;
+    padding: 10px;
+    font-family: "Poppins";
+    
+    color: #000;
+    position: relative;
+    letter-spacing: 0.015625em;
+    font-size: 14px;
+    font-weight: lighter;
+    background-color: transparent;
+    cursor: pointer;
+    align-items: center;
+}
+
+/* el tercer header */
+.header-2{
+    padding: 10px 0;
+    background-color: #fff;
+    border-top-style: solid;
+    border-top-width: 1px;
+
+}
+
+@media screen and (min-width:400px){
+    .list{
+    
+        justify-content: space-around;
+    }
+}
+
+
+@media screen and (min-width:480px){
+  
+    .people{
+        display: block;
+    }
+    .header-1{
+        display: flex;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        max-width: 96rem;
+    }
+    .head{
+        display: inline-block;
+        font-size: 20px;
+        line-height: 160%;
+        color: #000;
+        letter-spacing: 0.115625em;
+        opacity: 1;
+        padding-right: 1rem;
+        margin-top: 8px;
+    }
+    .people{
+        display: flex;
+        font-family: "Poppins";
+        color: #000;
+        cursor: pointer;
+        flex-grow: 1;
+        justify-content: center;
+        flex-direction: column;
+        font-weight: 100;
+        white-space: nowrap;
+        font-size: 17px;
+        text-align: left;
+        margin-right: 2rem;
+        
+    }
+    .nav{
+        white-space: nowrap;
+        width: auto;
+        display: block;
+        
+    }
+    .list-1{
+    
+        display: block;
+        padding: 10px;
+        font-family: "Poppins";
+        color: #000;
+        position: relative;
+        letter-spacing: 0.015625em;
+        font-size: 17px;
+        font-weight: lighter;
+        background-color: transparent;
+        cursor: pointer;
+        
+    }
+}
+
+
+/* 
+@media screen and (min-width:698px){} */
