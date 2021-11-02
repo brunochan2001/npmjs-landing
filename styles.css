@@ -467,7 +467,8 @@ html{
     padding-left: 1rem;
     display: flex;
     flex-direction: column;
-    max-width: 96rem;
+    max-width: 100%;
+    
 }
 
 /* FOOTER LOGO */
@@ -787,7 +788,7 @@ html{
 }
 
 
-@media screen and (min-width:960px){
+@media screen and (min-width:960px) and (max-width:2000px){
     .main-4-title{
         font-size:2.25rem ;
         margin-bottom: 4rem;
@@ -795,6 +796,7 @@ html{
     }
     .contenedor-general-footer{
         flex-direction: row;
+        
     }
     .footer-logo{
         width: 10%;
@@ -809,6 +811,7 @@ html{
     }
     .footer-conteiner-3{
         padding: 2rem;
+
 
     }
     
