@@ -2,6 +2,7 @@
     margin: 0;
     box-sizing: border-box;
     
+    
 }
 html{
     line-height: 1.15;
@@ -15,6 +16,7 @@ html{
     font-family: 'Source Sans Pro', 'Lucida Grande', sans-serif;
 }
 
+
 /* CONTENIDO DEL HEADER PRINCIPAL */
 .contenedor-general-header{
     background-color: #fff;
@@ -22,6 +24,7 @@ html{
     border-bottom: 1px solid #d2d2d2;
     border-color: rgba(0,0,0,0.2);
     width: 100%;
+    overflow:hidden;
 
 }
 
@@ -94,6 +97,7 @@ html{
 }
 /* el tercer header */
 .header-2{
+    overflow:hidden;
     padding: 10px 0;
     background-color: #fff; 
     margin-left: auto;
@@ -258,6 +262,7 @@ html{
 
 /* CONTENEDOR DEL MAIN */
 .contendor-general-main{
+    overflow:hidden;
     display: flex;
     flex-grow: 1;
     flex: 0 0 auto;
@@ -450,6 +455,7 @@ html{
 }
 /* CONTENEDOR FOOTER GENERAL */
 .contenedor-general-footer{
+    overflow:hidden;
     background-color: transparent;
     color: rgba(255,255,255, .8);
     font-family: 'Poppins';
@@ -546,6 +552,7 @@ html{
 
 /* FOOTER FINAL */
 .footer-final{
+    overflow:hidden;
     border-width: 10px 0 0;
     border-top-style: solid;
     border-image: linear-gradient(139deg, #fb8817, #ff4b01, #c12127, #e02aff) 3;
