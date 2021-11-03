@@ -1,0 +1,199 @@
+@media screen and (min-width:400px){
+    .list{
+        justify-content: space-around;
+    }
+    .search{
+        width: 100%;
+        order: 3;
+    }
+}
+@media screen and (min-width:400px) and (max-width:960px){
+    .contenedor-general-footer{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        max-width: 96rem;
+    }
+    .footer-logo{
+        padding: 2rem;
+    }
+    .footer-conteiner-1{
+        width: 50%;
+        padding: 2rem;
+
+    }
+    .footer-conteiner-2{
+        width: 50%;
+        padding: 2rem;
+
+    }
+    .footer-conteiner-3{
+        width: 50%;
+        padding: 2rem;
+    }
+}
+@media screen and (min-width:480px){
+    .main-1-button{
+        max-width: 32rem;
+    }
+    .main-1-button-1{
+        width: 46.5%;
+        padding-bottom: 1rem;
+        margin-right: 16px;
+        margin-left: auto;
+    }
+    .main-1-button-2{
+        padding-left: 1rem;
+        margin-top: 0;
+        width: 46.5%;
+        display: block;
+        margin-left: 16px;
+        margin-right: auto;
+    }
+    .people{
+        display: block;
+    }
+    .header-1{
+        display: flex;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        max-width: 96rem;   
+    }
+    .head{
+        display: inline-block;
+        font-size: 20px;
+        line-height: 160%;
+        color: #000;
+        letter-spacing: 0.115625em;
+        opacity: 1;
+        padding-right: 1rem;
+        margin-top: 8px;
+    }
+    .people{
+        display: flex;
+        font-family: "Poppins";
+        color: #000;
+        cursor: pointer;
+        flex-grow: 1;
+        justify-content: center;
+        flex-direction: column;
+        font-weight: 100;
+        white-space: nowrap;
+        font-size: 17px;
+        text-align: left;
+        margin-right: 2rem;
+    }
+    .nav{
+        white-space: nowrap;
+        width: auto;
+        display: block;   
+    }
+    .list-1{
+        display: block;
+        padding: 10px;
+        font-family: "Poppins";
+        color: #000;
+        position: relative;
+        letter-spacing: 0.015625em;
+        font-size: 14px;
+        font-weight: 500;
+        background-color: transparent;
+        cursor: pointer; 
+    }
+    .header-2{
+        padding: 10px 32px;
+    }
+    .search{
+        width: calc(100% - 100px);
+        order: 2;
+        padding: 8px 0px;
+    }
+    .header-2-title{
+        order: 1;
+    }
+    .header-2-sign{
+        order: 3;
+        margin: 0 0 0 16px;
+    }
+    .form{
+        border-top: none;
+    }
+    .main-1-title{
+        font-size: 4rem;
+        line-height: 1.25;
+    }
+    .svg-1{
+        margin-top: 10px;
+        width: 60px;
+        height: 22px;
+    }
+}
+
+@media screen and (min-width:700px){
+    .main-1-title{
+        font-size: 5rem;
+    }
+    .main-1-title-2{
+        font-size: 2.25rem; 
+        line-height: 1.25;
+        font-weight: 600; 
+    }
+    .main-3-title{
+        font-size: 3rem;
+    }
+    .search{
+        width: calc(100% - 350px);
+        order: 2;
+    }
+    
+    .header-2-title{
+        order: 1;
+    }
+    .header-2-sign{
+        order: 3;
+    }
+    .header-2{
+        justify-content: space-around;
+    }
+    .main-1-title{
+        font-family: 'Poppins', sans-serif;
+        max-width: 650px;
+        font-size: 5rem;
+        line-height: 1.25;
+    }
+    .main-1-title-2{
+        font-size: 2.25rem;  
+    }
+}
+@media screen and (min-width:960px){
+    .main-2-title{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 2.2rem;
+        line-height: 1.25;
+        }
+    .main-4-title{
+        font-size:2.25rem ;
+        margin-bottom: 4rem;
+        max-width: 32rem;
+    }
+    .contenedor-general-footer{
+        flex-direction: row;
+    }
+    .footer-logo{
+        width: 10%;
+        padding: 2rem;
+    }
+    .footer-conteiner-1{
+        padding: 2rem;
+    }
+    .footer-conteiner-2{
+        padding: 2rem;
+    }
+    .footer-conteiner-3{
+        padding: 2rem;
+    }
+}
