@@ -1,11 +1,3 @@
-*{
-    margin: 0;
-    box-sizing: border-box;  
-}
-html{
-    line-height: 1.15;
-    text-size-adjust: 100%;
-}
 .contenedor-general{
     display: flex;
     flex-direction: column;
@@ -13,49 +5,7 @@ html{
     line-height: 1.15;
     font-family: 'Source Sans Pro', 'Lucida Grande', sans-serif;
 }
-/* CONTENIDO DEL HEADER PRINCIPAL */
-.contenedor-general-header{
-    background-color: #fff;
-    box-shadow: 0 4px 13px -3px rgb(0 0 0 /10%);
-    border-bottom: 1px solid #d2d2d2;
-    border-color: rgba(0,0,0,0.2);
-    width: 100%;
-    overflow:hidden;
-}
-/* El header principal el color */
-.header-0{
-    border-width: 10px 0 0;
-    border-top-style: solid;
-    border-image: linear-gradient(139deg, #fb8817, #ff4b01, #c12127, #e02aff) 3;
-    width: 100%;
-}
-/* El segundo header el menu de navegacion */
-.header-1{
-    display: flex;
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    max-width: 96rem;
-    flex-direction: row;   
-}
-.head{
-    display: none;
-}
-.people{
-    display: none;
-}
-.nav{
-    font-weight: lighter;
-    white-space: nowrap;
-    text-align: right;
-    flex-grow: 0;
-    overflow: hidden;
-    padding: 8px 0;
-    width: 100%;
-    margin-right: 0;    
-}
+
 .list{
     display: flex;
     
@@ -85,29 +35,6 @@ html{
     border-top-width: 1px; 
     height: 1px;
     width: 100%;
-}
-/* el tercer header */
-.header-2{
-    overflow:hidden;
-    padding: 10px 0;
-    background-color: #fff; 
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 96rem;
-    display: flex; 
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.header-2-title{
-    margin-top: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-bottom: 1rem;
-    min-width: 0;
-    min-height: 0;
-    display: block;
-    order: 1;
-    flex: 1 1 auto;
 }
 .svg-1{
     width: 80px;
@@ -435,50 +362,7 @@ html{
     flex-direction: column;
     max-width: 100%;
 }
-/* FOOTER LOGO */
-.footer-logo{
-    padding: 1rem;
-    width: 100%;
-    flex: 1 1 auto;
-    min-height: 0;
-    min-width: 0;
-    color: rgba(255, 255,255,.8);
-    font-family: 'Poppins';
-}
-.footer-logo-1{
-    width: 50px;
-    padding-top: 1rem;
-    color: rgba(255, 255,255,.8);
-}
-.footer-logo-2{
-    width: 50px;
-    padding-top: 1rem;
-    color: rgba(255, 255,255,.8);
-}
-/* FOOTER 1ER CONTENEDOR */ 
-.footer-conteiner-1{
-    padding: 1rem;
-    flex: 1 1 auto;
-    min-height: 0;
-    min-width: 0;
-    color: rgba(255, 255, 255, .8)
-}
-/* FOOTER 2DO CONTENEDOR */
-.footer-conteiner-2{
-    padding: 1rem;
-    flex: 1 1 auto;
-    min-height: 0;
-    min-width: 0;
-    font-family: 'Poppins';
-}
-/* FOOTER 3ER CONTENEDOR */
-.footer-conteiner-3{
-    padding: 1rem;
-    flex: 1 1 auto;
-    min-height: 0;
-    min-width: 0;
-    font-family: 'Poppins';
-}
+
 /* TITLE */
 .title-list{
     font-family: 'Poppins';
@@ -507,12 +391,68 @@ html{
     list-style-type: none;    
     font-family: 'Poppins';   
 } 
-/* FOOTER FINAL */
-.footer-final{
-    overflow:hidden;
-    border-width: 10px 0 0;
-    border-top-style: solid;
-    border-image: linear-gradient(139deg, #fb8817, #ff4b01, #c12127, #e02aff) 3;
-    width: 100%;
+
+@media screen and (min-width:400px){
+    .list{
+        justify-content: space-around;
+    }
+    .search{
+        width: 100%;
+        order: 3;
+    }
 }
 
+
+
+@media screen and (min-width:700px){
+    .main-1-title{
+        font-size: 5rem;
+    }
+    .main-1-title-2{
+        font-size: 2.25rem; 
+        line-height: 1.25;
+        font-weight: 600; 
+    }
+    .main-3-title{
+        font-size: 3rem;
+    }
+    .search{
+        width: calc(100% - 350px);
+        order: 2;
+    }
+    
+    .header-2-title{
+        order: 1;
+    }
+    .header-2-sign{
+        order: 3;
+    }
+    .header-2{
+        justify-content: space-around;
+    }
+    .main-1-title{
+        font-family: 'Poppins', sans-serif;
+        max-width: 650px;
+        font-size: 5rem;
+        line-height: 1.25;
+    }
+    .main-1-title-2{
+        font-size: 2.25rem;  
+    }
+}
+
+
+
+@media screen and (min-width:960px){
+    .main-2-title{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 2.2rem;
+        line-height: 1.25;
+        }
+    .main-4-title{
+        font-size:2.25rem ;
+        margin-bottom: 4rem;
+        max-width: 32rem;
+    }
+}
