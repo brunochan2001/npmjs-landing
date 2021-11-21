@@ -351,7 +351,7 @@
 .contenedor-general-footer{
     overflow:hidden;
     background-color: transparent;
-    color: rgba(255,255,255, .8);
+    color: $grey-1;
     margin-top: 2rem;
     border-color: rgba(0, 0, 0, .1);
     border-top-style: solid;
@@ -379,7 +379,7 @@
     font-family: 'Poppins';
     text-align: left;
     line-height: 1.55;
-    color: rgba(255, 255,255,.8); 
+    color: $grey-1; 
 }
 .list-2{
     font-size: 16px;
