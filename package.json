@@ -4,7 +4,8 @@
   "description": "Practica de html y css con npmjs.com.",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch scss/main.scss:css/main.css"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/brunochan2001/npmjs-landing/issues"
   },
-  "homepage": "https://github.com/brunochan2001/npmjs-landing#readme"
+  "homepage": "https://github.com/brunochan2001/npmjs-landing#readme",
+  "dependencies": {
+    "sass": "^1.43.4"
+  }
 }
