@@ -1,0 +1,25 @@
+{
+  "name": "npmjs-landing",
+  "version": "1.0.0",
+  "description": "Practica de html y css con npmjs.com.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch scss/main.scss:css/main.css",
+    "format": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brunochan2001/npmjs-landing.git"
+  },
+  "author": "Bruno Chan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brunochan2001/npmjs-landing/issues"
+  },
+  "homepage": "https://github.com/brunochan2001/npmjs-landing#readme",
+  "dependencies": {
+    "prettier": "^2.4.1",
+    "sass": "^1.43.4"
+  }
+}
