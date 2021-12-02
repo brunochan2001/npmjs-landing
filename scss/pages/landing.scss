@@ -413,64 +413,66 @@
   list-style-type: none;
   font-family: "Poppins";
 }
+@media screen and (min-width:480px){
+  .main-1-button{
+      max-width: 32rem;
+  }
+  .main-1-button-1{
+      width: 46.5%;
+      padding-bottom: 1rem;
+      margin-right: 16px;
+      margin-left: auto;
+  }
+  .main-1-button-2{
+      padding-left: 1rem;
+      margin-top: 0;
+      width: 46.5%;
+      display: block;
+      margin-left: 16px;
+      margin-right: auto;
+  }
+  .main-1-title{
+      font-size: 4rem;
+      line-height: 1.25;
+  }
+  // HEADER
 
-@media screen and (min-width: 400px) {
-  .list {
-    justify-content: space-around;
-  }
-  .search {
-    width: 100%;
-    order: 3;
-  }
 }
 
-@media screen and (min-width: 700px) {
-  .main-1-title {
-    font-size: 5rem;
+@media screen and (min-width:700px){
+  .main-1-title{
+      font-size: 5rem;
   }
-  .main-1-title-2 {
-    font-size: 2.25rem;
-    line-height: 1.25;
-    font-weight: 600;
+  .main-1-title-2{
+      font-size: 2.25rem; 
+      line-height: 1.25;
+      font-weight: 600; 
   }
-  .main-3-title {
-    font-size: 3rem;
+  .main-3-title{
+      font-size: 3rem;
   }
-  .search {
-    width: calc(100% - 350px);
-    order: 2;
+  .main-1-title{
+      font-family: 'Poppins', sans-serif;
+      max-width: 650px;
+      font-size: 5rem;
+      line-height: 1.25;
+  }
+  .main-1-title-2{
+      font-size: 2.25rem;  
   }
 
-  .header-2-title {
-    order: 1;
-  }
-  .header-2-sign {
-    order: 3;
-  }
-  .header-2 {
-    justify-content: space-around;
-  }
-  .main-1-title {
-    font-family: "Poppins", sans-serif;
-    max-width: 650px;
-    font-size: 5rem;
-    line-height: 1.25;
-  }
-  .main-1-title-2 {
-    font-size: 2.25rem;
-  }
 }
-
-@media screen and (min-width: 960px) {
-  .main-2-title {
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-size: 2.2rem;
-    line-height: 1.25;
+@media screen and (min-width:960px){
+  .main-2-title{
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 2.2rem;
+      line-height: 1.25;
+      }
+  .main-4-title{
+      font-size:2.25rem ;
+      margin-bottom: 4rem;
+      max-width: 32rem;
   }
-  .main-4-title {
-    font-size: 2.25rem;
-    margin-bottom: 4rem;
-    max-width: 32rem;
-  }
+ 
 }

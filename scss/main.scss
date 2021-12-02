@@ -1,8 +1,9 @@
 @import "./base/variables";
 @import "./base/base";
-@import "./base/mixins";
+
+
+
+@import "./pages/landing";
 
 @import "./layout/footer";
 @import "./layout/header";
-
-@import "./pages/landing";
