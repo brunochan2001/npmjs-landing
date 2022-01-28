@@ -5,11 +5,10 @@
 html {
   line-height: 1.15;
   text-size-adjust: 100%;
+  font-family: 'Poppins', sans-serif;
 }
 
-@mixin h1{
-  font-size: 48px;
-}
-h1{
-  @include h1
+
+body{
+  font-family: 'Poppins', sans-serif;
 }
