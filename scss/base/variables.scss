@@ -1,3 +1,7 @@
 $header-border: linear-gradient(139deg, #fb8817, #ff4b01, #c12127, #e02aff) 3;
 
 $grey-1: rgba(255, 255, 255, 0.8);
+
+h1{
+    @include h1
+}
