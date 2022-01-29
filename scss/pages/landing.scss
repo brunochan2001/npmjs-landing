@@ -86,3 +86,33 @@ main {
 .section_img {
   margin-bottom: 32px;
 }
+
+@media (min-width: 480px) {
+  .section_button {
+    display: flex;
+  }
+  .button-1 {
+    margin-right: 16px;
+    margin-bottom: 16px;
+  }
+  .button-2 {
+    margin-left: 16px;
+    margin-bottom: 16px;
+  }
+  h1 {
+    @include h1(80px, 100px);
+  }
+}
+
+@media (min-width: 540px) {
+  p,
+  h2,
+  .section_button,
+  .section_img,
+  .h2_margin,
+  .h2_margin_0 {
+    width: 512px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

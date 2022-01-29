@@ -19,10 +19,10 @@ h3 {
   @include h3;
 }
 .footer_section {
-  @include footer_section;
+  @include footer_section(1rem);
 }
 .footer_article {
-  @include footer_article;
+  @include footer_article(1rem);
 }
 .article_title {
   @include article-title;
@@ -32,4 +32,18 @@ h3 {
 }
 .list_item {
   @include list-item;
+}
+
+@media screen and (min-width: 480px) {
+  .footer_section {
+    @include footer_section(2rem);
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer_article {
+    @include footer_article(1rem);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    flex-grow: 1;
+  }
 }

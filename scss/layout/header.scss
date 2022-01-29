@@ -12,6 +12,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   padding: 8px 16px;
+  align-items: center;
 }
 .section_header-1 {
   display: flex;
@@ -27,14 +28,18 @@ header {
 .nav_list {
   @include nav_list;
 }
+
 .nav_list_item {
-  @include nav_list_item;
+  @include nav_list_item(12px);
 }
 .npm_svg {
   width: 80px;
 }
 .button_search {
   @include button_search;
+}
+.header_nav {
+  width: 100%;
 }
 
 // MEJORAR EL CODIGO
@@ -73,7 +78,7 @@ header {
   padding-left: 1rem;
   float: left;
 }
-input[type="search"] {
+input[type='search'] {
   background: none;
   border: none;
   padding: 1px 10px;
@@ -81,11 +86,7 @@ input[type="search"] {
   font-weight: 300;
   height: 40px;
 }
-button[type="submit"] {
-  padding: 8px 25px 8px 32px;
-  font-size: 14px;
-  letter-spacing: 0.3px;
-}
+
 .header_form {
   padding: 0.5rem 1rem 0;
   display: flex;
@@ -102,4 +103,76 @@ button[type="submit"] {
   padding: 4px;
 }
 
-// La solucion es hacer que encaje el search
+@media (min-width: 480px) {
+  .section_header {
+    display: flex;
+    padding: 8px 32px;
+    flex-wrap: nowrap;
+  }
+  .section_header-1 {
+    padding: 10px 32px;
+    max-width: 800px;
+  }
+  .section_header_npm {
+    flex-grow: 0;
+    padding: 8px 0 0;
+    margin-right: 32px;
+  }
+  .section_header_search {
+    order: 2;
+    border-top: none;
+    width: 300px;
+    margin: 8px 0;
+  }
+  .section_header_button {
+    order: 3;
+  }
+  .header_form {
+    padding: 0;
+  }
+  .search {
+    width: 195px;
+    flex-grow: 1;
+  }
+  .button_search {
+    padding: 8px 32px 8px 32px;
+  }
+  .head {
+    display: block;
+    padding-right: 1rem;
+  }
+  .people {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    margin-right: 32px;
+    width: 100px;
+    font-size: 14px;
+  }
+  .header_nav {
+    flex-grow: 1;
+    width: 248px;
+    overflow: hidden;
+  }
+  .nav_list_item {
+    @include nav_list_item(14px);
+  }
+}
+@media (min-width: 717px) {
+  .people {
+    flex-grow: 1;
+  }
+  .nav_list {
+    justify-content: space-around;
+  }
+  .section_header,
+  .section_header-1 {
+    max-width: 1536px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .header_nav {
+    width: 416px;
+    flex-grow: 0;
+  }
+}
