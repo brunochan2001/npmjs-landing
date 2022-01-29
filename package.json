@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/brunochan2001/npmjs-landing#readme",
   "dependencies": {
-    "prettier": "^2.4.1",
+    "prettier": "^2.5.1",
     "sass": "^1.43.4"
   }
 }
