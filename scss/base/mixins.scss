@@ -1,89 +1,90 @@
 // Base
-@mixin h1($font,$height){
-    font-size: $font;
-    line-height: $height;
-    font-weight: 600;
-  }
-
-@mixin h2($font,$height){
-    font-size: $font;
-    line-height: $height;
-    color: rgb(51,51,51);
+@mixin h1($font, $height) {
+  font-size: $font;
+  line-height: $height;
+  font-weight: 600;
 }
 
-@mixin p($font,$height){
-    font-size: $font;
-    line-height: $height;
-    font-family: 'Arimo', sans-serif;
+@mixin h2($font, $height) {
+  font-size: $font;
+  line-height: $height;
+  color: rgb(51, 51, 51);
+}
+
+@mixin p($font, $height) {
+  font-size: $font;
+  line-height: $height;
+  font-family: "Arimo", sans-serif;
 }
 // Landing
-@mixin button-mobile{
-    font-weight: 600;
-    line-height: 24px;
-    padding: 16px 32px;
-    color: #000;
-    margin-bottom: 16px;
-    border-radius: 50px;
-    width: 100%;
-    height: 56px;
-    margin-left: auto;
-    margin-right: auto;
-    text-decoration-color: rgb(0, 0, 0);
-    text-decoration-line: none;
-    text-decoration-style: solid;
+@mixin button-mobile {
+  font-weight: 600;
+  line-height: 24px;
+  padding: 16px 32px;
+  color: #000;
+  margin-bottom: 16px;
+  border-radius: 50px;
+  width: 100%;
+  height: 56px;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration-color: rgb(0, 0, 0);
+  text-decoration-line: none;
+  text-decoration-style: solid;
 }
 // Footer
-@mixin footer_section{
-    padding: 1rem;
+@mixin footer_section {
+  padding: 1rem;
 }
-@mixin  footer_article {
-    padding: 1rem;
+@mixin footer_article {
+  padding: 1rem;
 }
-@mixin article-title{
-    font-size: 17px;
-    font-weight: 700;
-    letter-spacing: 1.3px;
-    line-height: 19.55px;
-    color: rgb(51,51,51);
-    // font-family: 'Poppins'
-    margin-top: 0px;
+@mixin article-title {
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+  line-height: 19.55px;
+  color: rgb(51, 51, 51);
+  // font-family: 'Poppins'
+  margin-top: 0px;
 }
-@mixin article_list{
-    margin: 16px 0;
-    list-style-type: none;
-    padding-left: 0px;
+@mixin article_list {
+  margin: 16px 0;
+  list-style-type: none;
+  padding-left: 0px;
 }
-@mixin list-item{
-    color: rgba(0,0,0,0.7);
-    padding: 4px 0;
-    height: 40px;
+@mixin list-item {
+  color: rgba(0, 0, 0, 0.7);
+  padding: 4px 0;
+  height: 40px;
 }
-@mixin h3{
-    margin: 17px 0;
-    }
+@mixin h3 {
+  margin: 17px 0;
+}
 // HEADER
-@mixin nav_list{
-    display: flex;
+@mixin nav_list {
+  display: flex;
 
-    list-style-type: none;
-    padding-left: 0px;
+  list-style-type: none;
+  padding-left: 0px;
 }
-@mixin nav_list_item{
-    font-size: 12px;
-    padding: 13px 10px 13px 13px;
+@mixin nav_list_item {
+  font-size: 12px;
+  padding: 13px 10px 13px 13px;
 }
 
-@mixin header_button_sing{
- padding: 13px 28px;
-text-decoration: none;
-color: #000;line-height: 1.5;
-font-weight: 500;
+@mixin header_button_sing {
+  padding: 13px 28px;
+  text-decoration: none;
+  color: #000;
+  line-height: 1.5;
+  font-weight: 500;
 }
-@mixin button_search{
-    padding: 8px 32px;
-    border: 0px;
-    background-color: rgb(35, 31, 32);
-    color: rgb(255, 255, 255);
-    font-size: 14px;
-    line-height: 16px;
+@mixin button_search {
+  padding: 8px 32px;
+  border: 0px;
+  background-color: rgb(35, 31, 32);
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  line-height: 16px;
 }
