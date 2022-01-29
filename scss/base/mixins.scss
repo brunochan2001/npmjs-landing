@@ -1,29 +1,28 @@
-@mixin h1-mobile{
-    font-size: 48px;
+// Base
+@mixin h1($font,$height){
+    font-size: $font;
+    line-height: $height;
     font-weight: 600;
-    line-height: 60px;
   }
 
-@mixin h2-mobile{
-    font-size: 24px;
+@mixin h2($font,$height){
+    font-size: $font;
+    line-height: $height;
     color: rgb(51,51,51);
-    line-height: 30px;
 }
-@mixin h3-mobile{
-margin: 17px 0;
-}
-@mixin p-mobile{
-    font-size: 16px;
-    line-height: 24px;
+
+@mixin p($font,$height){
+    font-size: $font;
+    line-height: $height;
     font-family: 'Arimo', sans-serif;
-    
 }
+// Landing
 @mixin button-mobile{
     font-weight: 600;
     line-height: 24px;
     padding: 16px 32px;
     color: #000;
-   margin-bottom: 16px;
+    margin-bottom: 16px;
     border-radius: 50px;
     width: 100%;
     height: 56px;
@@ -32,15 +31,15 @@ margin: 17px 0;
     text-decoration-color: rgb(0, 0, 0);
     text-decoration-line: none;
     text-decoration-style: solid;
-    
 }
+// Footer
 @mixin footer_section{
     padding: 1rem;
 }
 @mixin  footer_article {
     padding: 1rem;
 }
-@mixin article-title-mobile{
+@mixin article-title{
     font-size: 17px;
     font-weight: 700;
     letter-spacing: 1.3px;
@@ -49,13 +48,42 @@ margin: 17px 0;
     // font-family: 'Poppins'
     margin-top: 0px;
 }
-@mixin article_list-mobile{
+@mixin article_list{
     margin: 16px 0;
     list-style-type: none;
     padding-left: 0px;
 }
-@mixin list-item-mobile{
+@mixin list-item{
     color: rgba(0,0,0,0.7);
     padding: 4px 0;
     height: 40px;
+}
+@mixin h3{
+    margin: 17px 0;
+    }
+// HEADER
+@mixin nav_list{
+    display: flex;
+
+    list-style-type: none;
+    padding-left: 0px;
+}
+@mixin nav_list_item{
+    font-size: 12px;
+    padding: 13px 10px 13px 13px;
+}
+
+@mixin header_button_sing{
+ padding: 13px 28px;
+text-decoration: none;
+color: #000;line-height: 1.5;
+font-weight: 500;
+}
+@mixin button_search{
+    padding: 8px 32px;
+    border: 0px;
+    background-color: rgb(35, 31, 32);
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    line-height: 16px;
 }

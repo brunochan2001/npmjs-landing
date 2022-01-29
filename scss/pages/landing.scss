@@ -1,22 +1,23 @@
 h1{
-  @include h1-mobile;
+  @include h1(48px,60px)
+  ;
   margin:32.16px 0px;
 }
 h2{
-  @include h2-mobile;
+  @include h2(24px,30px);
   margin:19.92px 0px;
 }
 .h2_margin{
-  @include h2-mobile;
+  @include h2(24px,30px);
   margin: 0 0 19.92px 0;
 }
 .h2_margin_0{
-  @include h2-mobile;
+  @include h2(24px,30px);
   margin: 0 0 0 0;
   font-weight: 600;
 }
 p{
-  @include p-mobile
+  @include p(16px,24px)
 }
 main{
   text-align: center;

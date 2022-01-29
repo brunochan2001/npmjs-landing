@@ -17,7 +17,7 @@ footer{
     padding: 16px;
 }
 h3{
-    @include h3-mobile
+    @include h3
 }
 .footer_section{
     @include footer_section
@@ -26,11 +26,11 @@ h3{
     @include footer_article
 }
 .article_title{
-@include article-title-mobile
+@include article-title
 }
 .article_list{
-@include article-list-mobile
+@include article-list
 }
 .list_item{
-@include list-item-mobile
+@include list-item
 }
