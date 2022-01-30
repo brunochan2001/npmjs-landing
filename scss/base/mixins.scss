@@ -33,11 +33,11 @@
   text-decoration-style: solid;
 }
 // Footer
-@mixin footer_section {
-  padding: 1rem;
+@mixin footer_section($padding) {
+  padding: $padding;
 }
-@mixin footer_article {
-  padding: 1rem;
+@mixin footer_article($padding) {
+  padding: $padding;
 }
 @mixin article-title {
   font-size: 17px;
@@ -57,6 +57,9 @@
   color: rgba(0, 0, 0, 0.7);
   padding: 4px 0;
   height: 40px;
+  font-weight: 400;
+  line-height: 2;
+  font-family: sans-serif;
 }
 @mixin h3 {
   margin: 17px 0;
@@ -64,13 +67,14 @@
 // HEADER
 @mixin nav_list {
   display: flex;
-
   list-style-type: none;
   padding-left: 0px;
 }
-@mixin nav_list_item {
-  font-size: 12px;
-  padding: 13px 10px 13px 13px;
+@mixin nav_list_item($font) {
+  font-size: $font;
+  padding: 13px 13px 13px 13px;
+  flex-grow: 1;
+  font-weight: 500;
 }
 
 @mixin header_button_sing {
@@ -81,7 +85,8 @@
   font-weight: 500;
 }
 @mixin button_search {
-  padding: 8px 32px;
+  padding: 8px 25px 8px 32px;
+  letter-spacing: 0.3px;
   border: 0px;
   background-color: rgb(35, 31, 32);
   color: rgb(255, 255, 255);

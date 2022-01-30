@@ -86,3 +86,62 @@ main {
 .section_img {
   margin-bottom: 32px;
 }
+
+@media (min-width: 480px) {
+  .section_button {
+    display: flex;
+  }
+  .button-1 {
+    margin-right: 16px;
+    margin-bottom: 16px;
+  }
+  .button-2 {
+    margin-left: 16px;
+    margin-bottom: 16px;
+  }
+  h1 {
+    @include h1(80px, 100px);
+  }
+}
+
+@media (min-width: 540px) {
+  p,
+  h2,
+  .section_button,
+  .section_img,
+  .h2_margin,
+  .h2_margin_0 {
+    width: 512px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 768px) {
+  .mobile,
+  .mobile-2 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 960px) {
+  h1 {
+    @include h1(80px, 100px);
+    margin: 53.6px 0px;
+  }
+  h2 {
+    @include h2(36px, 45px);
+    margin: 29.8px 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 600;
+  }
+  .h2_margin {
+    font-size: 48px;
+    line-height: 60px;
+    margin-bottom: 38.8px;
+  }
+  .h2_margin_0 {
+    font-size: 36px;
+    line-height: 45px;
+  }
+}
