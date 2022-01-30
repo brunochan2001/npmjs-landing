@@ -1,5 +1,6 @@
 header {
   padding: 0px 0 10px 0;
+  overflow-y: hidden;
 }
 .header-fund {
   background-image: linear-gradient(139deg, #fb8817, #ff4b01, #c12127, #e02aff);
@@ -19,11 +20,15 @@ header {
   padding: 8px 16px;
   align-items: center;
 }
+.border-header {
+  height: 1px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+}
 .section_header-1 {
   display: flex;
   flex-wrap: wrap;
   padding: 10px 0;
-  border-top: solid 1px rgba(0, 0, 0, 0.1);
   max-width: 500px;
 }
 .head,
@@ -46,8 +51,6 @@ header {
 .header_nav {
   width: 100%;
 }
-
-// MEJORAR EL CODIGO
 .section_header_npm {
   margin-top: 16px;
   padding: 0 16px 16px;
@@ -83,13 +86,15 @@ header {
   padding-left: 1rem;
   float: left;
 }
-input[type='search'] {
+input[type="text"] {
   background: none;
   border: none;
   padding: 1px 10px;
   font-size: 14px;
   font-weight: 300;
   height: 40px;
+  font-family: "Fira Mono", monospace;
+  flex-grow: 1;
 }
 
 .header_form {
@@ -179,5 +184,17 @@ input[type='search'] {
   .header_nav {
     width: 416px;
     flex-grow: 0;
+  }
+  .section_header_button {
+    margin-top: 0px;
+  }
+  .button_singup {
+    padding-top: 11px;
+    padding-bottom: 11px;
+  }
+  .head {
+    width: 35px;
+    height: 42px;
+    padding-top: 7px;
   }
 }
