@@ -14,7 +14,7 @@
 @mixin p($font, $height) {
   font-size: $font;
   line-height: $height;
-  font-family: 'Arimo', sans-serif;
+  font-family: "Arimo", sans-serif;
 }
 // Landing
 @mixin button-mobile {
@@ -57,6 +57,9 @@
   color: rgba(0, 0, 0, 0.7);
   padding: 4px 0;
   height: 40px;
+  font-weight: 400;
+  line-height: 2;
+  font-family: sans-serif;
 }
 @mixin h3 {
   margin: 17px 0;
@@ -71,6 +74,7 @@
   font-size: $font;
   padding: 13px 13px 13px 13px;
   flex-grow: 1;
+  font-weight: 500;
 }
 
 @mixin header_button_sing {
